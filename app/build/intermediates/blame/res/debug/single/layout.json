@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/omarfaroque/AndroidStudioProjects/project/app/build/intermediates/res/merged/debug/layout/console.xml",
+        "source": "/Users/omarfaroque/AndroidStudioProjects/project/app/src/main/res/layout/console.xml"
+    },
+    {
+        "merged": "/Users/omarfaroque/AndroidStudioProjects/project/app/build/intermediates/res/merged/debug/layout/loopback.xml",
+        "source": "/Users/omarfaroque/AndroidStudioProjects/project/app/src/main/res/layout/loopback.xml"
+    },
+    {
+        "merged": "/Users/omarfaroque/AndroidStudioProjects/project/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/omarfaroque/AndroidStudioProjects/project/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/omarfaroque/AndroidStudioProjects/project/app/build/intermediates/res/merged/debug/layout/sending01010101.xml",
+        "source": "/Users/omarfaroque/AndroidStudioProjects/project/app/src/main/res/layout/sending01010101.xml"
+    }
+]
