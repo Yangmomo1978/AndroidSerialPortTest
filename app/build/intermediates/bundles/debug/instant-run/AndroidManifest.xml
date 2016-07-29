@@ -28,7 +28,7 @@
         </activity>
         <activity android:name="android_serialport_api.sample.LoopbackActivity" >
         </activity>
-        <activity android:name="android_serialport_api.sample.Sending01010101Activity" />
+        <activity android:name="android_serialport_api.sample.SendingTriggerCommandActivity" />
     </application>
 
 </manifest>

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/omarfaroque/AndroidStudioProjects/project/app/build/intermediates/res/merged/debug/values/values.xml",
+        "outputFile": "/Users/omarfaroque/AndroidSerialPortTest/app/build/intermediates/res/merged/debug/values/values.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 920
                 },
                 "from": {
-                    "file": "/Users/omarfaroque/AndroidStudioProjects/project/app/src/main/res/values/baudrates.xml",
+                    "file": "/Users/omarfaroque/AndroidSerialPortTest/app/src/main/res/values/baudrates.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -33,7 +33,7 @@
                     "endOffset": 1791
                 },
                 "from": {
-                    "file": "/Users/omarfaroque/AndroidStudioProjects/project/app/src/main/res/values/baudrates.xml",
+                    "file": "/Users/omarfaroque/AndroidSerialPortTest/app/src/main/res/values/baudrates.xml",
                     "position": {
                         "startLine": 35,
                         "startColumn": 4,
@@ -54,7 +54,7 @@
                     "endOffset": 2615
                 },
                 "from": {
-                    "file": "/Users/omarfaroque/AndroidStudioProjects/project/app/src/main/res/values/strings.xml",
+                    "file": "/Users/omarfaroque/AndroidSerialPortTest/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -74,7 +74,7 @@
                     "endOffset": 2675
                 },
                 "from": {
-                    "file": "/Users/omarfaroque/AndroidStudioProjects/project/app/src/main/res/values/strings.xml",
+                    "file": "/Users/omarfaroque/AndroidSerialPortTest/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -93,7 +93,7 @@
                     "endOffset": 2764
                 },
                 "from": {
-                    "file": "/Users/omarfaroque/AndroidStudioProjects/project/app/src/main/res/values/strings.xml",
+                    "file": "/Users/omarfaroque/AndroidSerialPortTest/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -113,7 +113,7 @@
                     "endOffset": 2867
                 },
                 "from": {
-                    "file": "/Users/omarfaroque/AndroidStudioProjects/project/app/src/main/res/values/strings.xml",
+                    "file": "/Users/omarfaroque/AndroidSerialPortTest/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -134,7 +134,7 @@
                     "endOffset": 2968
                 },
                 "from": {
-                    "file": "/Users/omarfaroque/AndroidStudioProjects/project/app/src/main/res/values/strings.xml",
+                    "file": "/Users/omarfaroque/AndroidSerialPortTest/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,

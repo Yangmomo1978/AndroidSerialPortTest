@@ -7,12 +7,12 @@ LOCAL_LDLIBS := \
 	-llog \
 
 LOCAL_SRC_FILES := \
-	/Users/omarfaroque/AndroidStudioProjects/project/app/src/main/jni/Android.mk \
-	/Users/omarfaroque/AndroidStudioProjects/project/app/src/main/jni/Application.mk \
-	/Users/omarfaroque/AndroidStudioProjects/project/app/src/main/jni/gen_SerialPort_h.sh \
-	/Users/omarfaroque/AndroidStudioProjects/project/app/src/main/jni/SerialPort.c \
+	/Users/omarfaroque/AndroidSerialPortTest/app/src/main/jni/Android.mk \
+	/Users/omarfaroque/AndroidSerialPortTest/app/src/main/jni/Application.mk \
+	/Users/omarfaroque/AndroidSerialPortTest/app/src/main/jni/gen_SerialPort_h.sh \
+	/Users/omarfaroque/AndroidSerialPortTest/app/src/main/jni/SerialPort.c \
 
-LOCAL_C_INCLUDES += /Users/omarfaroque/AndroidStudioProjects/project/app/src/main/jni
-LOCAL_C_INCLUDES += /Users/omarfaroque/AndroidStudioProjects/project/app/src/debug/jni
+LOCAL_C_INCLUDES += /Users/omarfaroque/AndroidSerialPortTest/app/src/main/jni
+LOCAL_C_INCLUDES += /Users/omarfaroque/AndroidSerialPortTest/app/src/debug/jni
 
 include $(BUILD_SHARED_LIBRARY)

@@ -2,18 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/omarfaroque/AndroidStudioProjects/project/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/omarfaroque/AndroidSerialPortTest/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="20.0.0"
-        sha1="9a00d0b3c96669619d7e209aa620e4b075c3901b">
-        <dex dex="/Users/omarfaroque/AndroidStudioProjects/project/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_fbfed2fcca31c5d3ac837465da8415a74034d4ab.jar" />
-    </item>
-    <item
-        jar="/Users/omarfaroque/AndroidStudioProjects/project/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="20.0.0"
-        sha1="b3f2968affc70dedccee67dc4525bf8e163b211e">
-        <dex dex="/Users/omarfaroque/AndroidStudioProjects/project/app/build/intermediates/pre-dexed/debug/instant-run_236df97a97dd36838227541c24d4ece9810cfe49.jar" />
+        sha1="17865d74b2da6d8ca231898bcfd6a11f37ee6b5c">
+        <dex dex="/Users/omarfaroque/AndroidSerialPortTest/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_a3011e54e333160182751ccdec4b070fe9793f71.jar" />
     </item>
 
 </items>

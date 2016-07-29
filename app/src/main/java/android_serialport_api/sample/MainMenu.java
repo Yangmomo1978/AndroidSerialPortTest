@@ -55,7 +55,7 @@ public class MainMenu extends Activity {
         final Button button01010101 = (Button)findViewById(R.id.Button01010101);
         button01010101.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				startActivity(new Intent(MainMenu.this, Sending01010101Activity.class));
+				startActivity(new Intent(MainMenu.this, SendingTriggerCommandActivity.class));
 			}
 		});
 
