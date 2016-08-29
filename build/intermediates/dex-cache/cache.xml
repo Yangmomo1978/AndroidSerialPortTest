@@ -1,12 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
-
-    <item
-        jar="/Users/omarfaroque/AndroidSerialPortTest/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="20.0.0"
-        sha1="17865d74b2da6d8ca231898bcfd6a11f37ee6b5c">
-        <dex dex="/Users/omarfaroque/AndroidSerialPortTest/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_a3011e54e333160182751ccdec4b070fe9793f71.jar" />
-    </item>
-
-</items>
+<items version="2" />

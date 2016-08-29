@@ -110,6 +110,8 @@ JNIEXPORT jobject JNICALL Java_android_1serialport_1api_SerialPort_open
 	/* Configure device */
 	{
 		struct termios cfg;
+		memset (&cfg, 0, sizeof cfg);
+
 		LOGD("Configuring serial port");
 		if (tcgetattr(fd, &cfg))
 		{
@@ -119,21 +121,29 @@ JNIEXPORT jobject JNICALL Java_android_1serialport_1api_SerialPort_open
 			return NULL;
 		}
 
-		cfmakeraw(&cfg);
-		cfsetispeed(&cfg, speed);
-		cfsetospeed(&cfg, speed);
+		cfmakeraw(&cfg);                  //set the terminal in the raw mode
+		cfsetispeed(&cfg, speed);         //set input baudrate speed
+		cfsetospeed(&cfg, speed);         //set output baudrate speed
 
-		cfg.c_cflag &= ~PARENB;             // No parity bit
-		cfg.c_cflag &= ~CSTOPB;             // 1 stop bit
-		//cfg.c_cflag &= ~CSIZE;              // Mask data size
-		cfg.c_cflag |=  CS8;                // Select 8 data bits
-		cfg.c_cflag &= ~CRTSCTS;  //disable hardware flow control
 
-		cfg.c_iflag &= ~(IGNBRK | BRKINT | PARMRK | ISTRIP
-						 | INLCR | IGNCR | ICRNL | IXON);
-		cfg.c_oflag &= ~OPOST;
-		cfg.c_cc[VMIN]  = 1;
-		cfg.c_cc[VTIME] = 2;
+		cfg.c_cflag = (cfg.c_cflag & ~CSIZE) | CS8;     // 8-bit chars
+		// disable IGNBRK for mismatched speed tests; otherwise receive break
+		// as \000 chars
+		cfg.c_iflag &= ~IGNBRK;         // disable break processing
+		cfg.c_lflag = 0;                // no signaling chars, no echo,
+		// no canonical processing
+		cfg.c_oflag = 0;                // no remapping, no delays
+		cfg.c_cc[VMIN]  = 0;            // read doesn't block
+		cfg.c_cc[VTIME] = 5;            // 0.5 seconds read timeout
+
+		cfg.c_iflag &= ~(IXON | IXOFF | IXANY); // shut off xon/xoff ctrl
+
+		cfg.c_cflag |= (CLOCAL | CREAD);// ignore modem controls,
+		// enable reading
+		cfg.c_cflag &= ~(PARENB | PARODD);      // shut off parity
+		cfg.c_cflag |= 0;
+		cfg.c_cflag &= ~CSTOPB;
+		cfg.c_cflag &= ~CRTSCTS;
 
 		if (tcsetattr(fd, TCSANOW, &cfg))
 		{
