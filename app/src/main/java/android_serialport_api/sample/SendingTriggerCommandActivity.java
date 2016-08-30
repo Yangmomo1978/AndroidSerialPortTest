@@ -17,6 +17,7 @@
 package android_serialport_api.sample;
 
 import java.io.IOException;
+import java.math.BigInteger;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -39,7 +40,17 @@ public class SendingTriggerCommandActivity extends SerialPortActivity {
 	@Override
 	protected void onStart() {
 		super.onStart();
-		mBuffer=new byte[] { (byte)0x16, 0x54, 0x0D };
+		//to start the aimer on
+		//SYN M CR scnaim2.
+
+		mBuffer=new byte[] { (byte)0x16, 0x4D, 0x0D, 0x73,0x63,0x6E,0x61,0x69,0x6D,0x32,0x2E};//try for small character
+
+
+		//SYN M CR SCNAIM2.
+		//mBuffer=new byte[]{(byte)0x16, 0x4D, 0x0D,0x53,0x43,0x4E,0x41,0x49,0x4D,0x32,0x2E}; //capital character
+
+		//String command="SYNMCRSCNAIM2";
+		//mBuffer=command.getBytes();
 
 		if (mSerialPort != null) {
 			mSendingThread = new SendingThread();
@@ -59,8 +70,9 @@ public class SendingTriggerCommandActivity extends SerialPortActivity {
 			while (!isInterrupted()) {
 				try {
 					if (mOutputStream != null) {
-						mOutputStream.write(mBuffer);
+						mOutputStream.write(mBuffer,0,mBuffer.length);
 						mOutputStream.flush();
+						mOutputStream.close();
 					} else {
 						return;
 					}
